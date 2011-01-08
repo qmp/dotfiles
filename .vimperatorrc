@@ -1,0 +1,7 @@
+"2.3.1 (created: 2010/04/07 18:56:53)
+
+set defsearch=duck
+set runtimepath=/home/qmp/.vimperator
+source! /home/qmp/.vimperatorrc.local
+
+" vim: set ft=vimperator:
