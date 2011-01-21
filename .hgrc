@@ -1,0 +1,7 @@
+[pager]
+pager=less -rFX
+[color]
+mode=auto
+[extensions]
+color=
+pager=
