@@ -5,3 +5,4 @@ mode=auto
 [extensions]
 color=
 pager=
+prompt=~/Documents/prog/hg-prompt/prompt.py

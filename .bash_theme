@@ -17,7 +17,7 @@ function rvm_version_prompt {
 
 function __hg_branch_prompt()
 {
-	hg branch 2>/dev/null | awk '{print  " ("$1")"}'
+	hg prompt " ({branch}{status})"
 }
 
 #clear PS1
@@ -28,4 +28,4 @@ if [ "$TERM" == "rxvt-unicode-256color" ]; then
 fi
 
 # Enclosing (\[\]) around colors to avoid word-wrap weirdo stuff(http://ubuntuforums.org/showthread.php?t=234232)
-PS1=$PS1'\[$SPEC_CYAN\]░\W\[$LIGHT_BLUE\]$(rvm_version_prompt)\[$LIGHT_GREEN\]$(__git_ps1 " (%s)")\[$PINK\]$(__hg_branch_prompt)\[${SPEC_CYAN}\]»\[${NORMAL}\] '
+PS1=$PS1'\[$SPEC_CYAN\]░\W\[$LIGHT_BLUE\]$(rvm_version_prompt)\[$LIGHT_GREEN\]$(__git_ps1 " (%s)")\[$PINK\]\[${SPEC_CYAN}\]»\[${NORMAL}\] '
