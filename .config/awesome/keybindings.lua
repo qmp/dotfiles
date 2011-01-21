@@ -19,7 +19,7 @@ globalkeys = awful.util.table.join(
     awful.key({                   }, "XF86MonBrightnessUp", function () awful.util.spawn("xbacklight +10 -time 0") end),
     awful.key({                   }, "XF86Launch1", function () awful.util.spawn_with_shell("xset dpms force off;i3lock") end),
     awful.key({                   }, "XF86ScreenSaver", function () awful.util.spawn_with_shell("xset dpms force off;i3lock") end),
-    awful.key({                   }, "XF86Sleep", function () awful.util.spawn("dbus-send --print-reply --system --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend") end),
+    awful.key({                   }, "XF86Sleep", function () awful.util.spawn_with_shell("dbus-send --print-reply --system --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend;i3lock") end),
     --
     -- awful.key({                   }, "XF86Suspend", function () awful.util.spawn("dbus-send --print-reply --system --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Hibernate") end),
     awful.key({                   }, "XF86Display", function () awful.util.spawn("xrandr --auto") end),
