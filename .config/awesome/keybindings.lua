@@ -15,6 +15,8 @@ globalkeys = awful.util.table.join(
     awful.key({                   }, "XF86AudioPrev", function () awful.util.spawn("mpc prev") end),
     awful.key({                   }, "XF86AudioNext", function () awful.util.spawn("mpc next") end),
 
+    awful.key({                   }, "XF86MonBrightnessDown", function () awful.util.spawn("xbacklight -10 -time 0") end),
+    awful.key({                   }, "XF86MonBrightnessUp", function () awful.util.spawn("xbacklight +10 -time 0") end),
     awful.key({                   }, "XF86Launch1", function () awful.util.spawn_with_shell("xset dpms force off;i3lock") end),
     awful.key({                   }, "XF86ScreenSaver", function () awful.util.spawn_with_shell("xset dpms force off;i3lock") end),
     awful.key({                   }, "XF86Sleep", function () awful.util.spawn("dbus-send --print-reply --system --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend") end),
