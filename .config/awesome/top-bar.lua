@@ -1,7 +1,7 @@
 batwidget = widget({ type = "textbox" })
 vicious.register(batwidget, vicious.widgets.bat, "$1$2%", 61, "BAT0")
 
-mytextclock = awful.widget.textclock({ align = "right" })
+mytextclock = awful.widget.textclock({ align = "right" }, " %a %b %d, %H:%M ", 1)
 
 mysystray = widget({ type = "systray" })
 
