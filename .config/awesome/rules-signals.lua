@@ -17,8 +17,6 @@ awful.rules.rules = {
       properties = { tag = tags[1][2] } },
     { rule = { class = "Navigator" },
       properties = { tag = tags[1][2] } },
-    { rule = { class = "qemu-kvm" },
-      properties = { floating = true } },
 }
 
 -- Signals
