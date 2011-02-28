@@ -17,6 +17,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][2] } },
     { rule = { class = "Navigator" },
       properties = { tag = tags[1][2] } },
+    { rule = { instance = "urxvt256c" },
+      properties = { opacity = 0.9 } },
 }
 
 -- Signals
