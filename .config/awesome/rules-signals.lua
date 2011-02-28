@@ -15,8 +15,6 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][2] } },
-    { rule = { class = "Navigator" },
-      properties = { tag = tags[1][2] } },
     { rule = { instance = "urxvt256c" },
       properties = { opacity = 0.9 } },
 }
