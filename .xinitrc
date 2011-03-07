@@ -29,7 +29,8 @@ awesome)
     exec /usr/bin/ck-launch-session awesome
     ;;
 openbox)
-    xcompmgr &
+    # disabled for bug in xserver 1.9.2
+    # xcompmgr &
     exec  /usr/bin/ck-launch-session openbox-session
     ;;
 compiz)
