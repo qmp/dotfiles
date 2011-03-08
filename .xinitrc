@@ -31,6 +31,7 @@ awesome)
 openbox)
     # disabled for bug in xserver 1.9.2
     # xcompmgr &
+    test -r ~/.fehbg && `cat ~/.fehbg`
     exec  /usr/bin/ck-launch-session openbox-session
     ;;
 compiz)
