@@ -371,14 +371,4 @@
   </item>
 </menu>
 
-<menu id="root-menu" label="Openbox 3">
-  <separator label="Applications" />
-  <menu id="xdg-menu" label="XDG menu" execute="cat /var/cache/xdg-menu/openbox/menu.xml"/>
-  <item label="Log Out">
-    <action name="Exit">
-      <prompt>no</prompt>
-    </action>
-  </item>
-</menu>
-
 </openbox_menu>
