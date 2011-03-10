@@ -13,7 +13,7 @@ test -r /etc/X11/Xresources && xrdb -nocpp -merge /etc/X11/Xresources
 test -r ~/.Xresources && xrdb -merge ~/.Xresources
 test -r ~/.Xmodmap && xmodmap ~/.Xmodmap
 test -x /usr/bin/syndaemon && /usr/bin/syndaemon -t -k -i 2 -d
-test -x /usr/bin/hhp && /usr/bin/hhp &
+test -x /usr/bin/unclutter && /usr/bin/unclutter -root &
 
 if ([ -x /usr/bin/gnome-keyring-daemon ]); then
 	eval "`/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg`"
