@@ -1,0 +1,15 @@
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+include "/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc"
+
+style "user-font" {
+	font_name = "DejaVu Sans 10"
+}
+
+widget_class "*" style "user-font"
+
+gtk-font-name="DejaVu Sans 10"
+gtk-icon-theme-name="Tango"
+
+include "/home/qmp/.gtkrc.mine"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT
