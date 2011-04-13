@@ -9,7 +9,7 @@ beautiful.init("/usr/share/awesome/themes/sky/theme.lua")
 
 terminal = "urxvt256c"
 navigator = "firefox"
-chat = "gajim"
+chat = "empathy"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
