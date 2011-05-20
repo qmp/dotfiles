@@ -19,17 +19,17 @@ case $1 in
 awesome)
     # disabled for bug in xserver 1.9.2
     # xcompmgr &
-    exec ck-launch-session awesome
+    exec awesome
     ;;
 openbox)
     # disabled for bug in xserver 1.9.2
     # xcompmgr &
-    exec ck-launch-session openbox-session
+    exec openbox-session
     ;;
 compiz)
-    exec ck-launch-session compiz ccp
+    exec compiz ccp
     ;;
 *)
-    exec ck-launch-session $DEFAULT_SESSION
+    exec $DEFAULT_SESSION
     ;;
 esac
