@@ -17,7 +17,6 @@ fi
 source /etc/X11/xinit/xinitrc-common
 case $1 in
 awesome)
-    dcompmgr &>/dev/null &
     exec awesome
     ;;
 openbox)
