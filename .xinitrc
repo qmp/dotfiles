@@ -17,8 +17,7 @@ fi
 source /etc/X11/xinit/xinitrc-common
 case $1 in
 awesome)
-    # disabled for bug in xserver 1.9.2
-    # xcompmgr &
+    dcompmgr &>/dev/null &
     exec awesome
     ;;
 openbox)
