@@ -4,6 +4,11 @@ require("awful.rules")
 require("beautiful")
 require("naughty")
 require("vicious")
+require("bashets")
+
+bashets.set_defaults({update_time = 30, file_update_time = 30})
+bashets.set_script_path('~/.config/awesome/scripts/')
+
 
 beautiful.init("/usr/share/awesome/themes/sky/theme.lua")
 
@@ -37,3 +42,5 @@ require("keybindings")
 require("rules-signals")
 require("startup")
 require("naughty-osd")
+
+bashets.start()
