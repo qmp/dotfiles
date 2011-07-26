@@ -7,7 +7,7 @@ mytaskw = widget({type = "textbox", popup = nil })
 bashets.register('task_summary.sh', {widget = mytaskw, format = '<b><span color="red">$1</span>/<span color="cyan">$2</span>/<span color="white">$3</span></b>"', async = true, update_time = 120 })
 taskw_popup = nil
 function taskw_get_popup_text ()
-	awful.util.spawn('task_cache.sh')
+	awful.util.spawn('/home/qmp/.config/awesome/scripts/task_cache.sh')
 end
 function taskw_show_popup ()
 	taskw_popup = naughty.notify({
