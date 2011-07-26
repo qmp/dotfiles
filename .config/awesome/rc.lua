@@ -4,6 +4,7 @@ require("awful.rules")
 require("beautiful")
 require("naughty")
 require("vicious")
+require("revelation")
 
 beautiful.init("/usr/share/awesome/themes/sky/theme.lua")
 
