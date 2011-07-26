@@ -1,3 +1,6 @@
 [submodule ".config/awesome/vicious"]
 	path = .config/awesome/vicious
 	url = http://git.sysphere.org/vicious/
+[submodule ".config/awesome/bashets"]
+	path = .config/awesome/bashets
+	url = git://gitorious.org/bashets/bashets.git

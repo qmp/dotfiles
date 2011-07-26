@@ -3,6 +3,30 @@ vicious.register(batwidget, vicious.widgets.bat, "$1$2%", 61, "BAT0")
 
 mytextclock = awful.widget.textclock({ align = "right" }, " %a %b %d, %H:%M ", 1)
 
+mytaskw = widget({type = "textbox", name = "mytaskw", popup = nil })
+bashets.register('/home/qmp/.config/awesome/scripts/task_summary.sh', {widget = mytaskw, format = '<b><span color="red">$1</span>/<span color="cyan">$2</span>/<span color="white">$3</span></b>"', async = true })
+taskw_popup = nil
+function taskw_get_popup_text ()
+	awful.util.spawn('/home/qmp/.config/awesome/scripts/task_cache.sh')
+end
+function taskw_show_popup ()
+	taskw_popup = naughty.notify({
+		text = awful.util.pread('cat /tmp/thunder_task_cache'),
+		title = "tasks" 
+	}) 
+end
+function taskw_close_popup()
+	if taskw_popup ~= nil then
+		naughty.destroy(taskw_popup)
+		taskw_popup = nil
+	end
+end
+mytaskw:add_signal("mouse::enter", taskw_show_popup )
+mytaskw:add_signal("mouse::leave", taskw_close_popup )
+taskw_popup_text_timer = timer({timeout=10})
+taskw_popup_text_timer:add_signal('timeout', taskw_get_popup_text)
+taskw_popup_text_timer:start()
+
 mysystray = widget({ type = "systray" })
 
 mywibox = {}
@@ -74,6 +98,7 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
+		mytaskw,
         s == 1 and mysystray or nil,
         --netwidget,
         batwidget,
