@@ -3,7 +3,7 @@ vicious.register(batwidget, vicious.widgets.bat, "$1$2%", 61, "BAT0")
 
 mytextclock = awful.widget.textclock({ align = "right" }, " %a %b %d, %H:%M ", 1)
 
-mytaskw = widget({type = "textbox", popup = nil, name="mytaskw" })
+mytaskw = widget({type = "textbox", popup = nil, name="mytaskw", separator='|' })
 bashets.register('task_summary.sh', {widget = mytaskw, format = '<b><span color="red">$1</span>/<span color="cyan">$2</span>/<span color="white">$3</span></b>"', async = true, update_time = 120 })
 mytaskw_popup = nil
 function mytaskw_get_popup_text ()

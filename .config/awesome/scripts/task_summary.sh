@@ -7,6 +7,6 @@ high=`sh $DIR/task_reader.sh high | wc -l`
 if [ "$1" == "html" ]; then
   echo "<span color=red>$high</span>/<span color=white>$normal</span>/<span color=blue>$low</span>"
 else
-  echo "$high $normal $low"
+  echo "$high|$normal|$low"
 fi
 
