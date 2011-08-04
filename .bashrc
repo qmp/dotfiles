@@ -8,3 +8,5 @@ fi
 # User specific aliases and functions
 test -r ~/.colors && source ~/.colors
 test -r ~/.bash_theme && source ~/.bash_theme
+
+export EDITOR=vim
