@@ -1,5 +1,6 @@
 "3.2 (created: 2011/06/03 11:51:34)
 
+set defsearch=duck
 set noscrollbars
 source! /home/qmp/.vimperatorrc.local
 
