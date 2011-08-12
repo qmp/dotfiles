@@ -2,6 +2,8 @@
 
 set defsearch=duck
 set noscrollbars
+set status=input,location,bookmark,history,position
+set tabnumbers
 source! /home/qmp/.vimperatorrc.local
 
 " vim: set ft=vimperator:
