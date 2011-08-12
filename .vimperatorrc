@@ -1,6 +1,7 @@
 "3.2 (created: 2011/06/03 11:51:34)
 
 set defsearch=duck
+set focuscontent
 set noscrollbars
 set status=input,location,bookmark,history,position
 set tabnumbers
