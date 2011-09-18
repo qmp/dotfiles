@@ -38,8 +38,8 @@ for s = 1, screen.count() do
 end
 
 
--- CUSTOM: xsetroot every 10 seconds
-cursor_timer = timer({ timeout = 10 })
+-- CUSTOM: xsetroot every 4 seconds
+cursor_timer = timer({ timeout = 4 })
 cursor_timer:add_signal("timeout", function() awful.util.spawn_with_shell("xsetroot -cursor_name left_ptr") end)
 cursor_timer:start()
 -- Initial setting of the cursor theme
