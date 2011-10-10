@@ -4,3 +4,6 @@
 [submodule ".config/awesome/bashets"]
 	path = .config/awesome/bashets
 	url = git://gitorious.org/bashets/bashets.git
+[submodule ".config/awesome/themes"]
+	path = .config/awesome/themes
+	url = https://github.com/mikar/awesome-themes.git
