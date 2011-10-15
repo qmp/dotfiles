@@ -19,6 +19,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][3] } },
     { rule = { instance = "urxvt256c" },
       properties = { opacity = 0.9 } },
+    { rule = { instance = "xterm" },
+      properties = { opacity = 0.9 } },
 }
 
 -- Signals
