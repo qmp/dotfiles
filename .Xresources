@@ -1,3 +1,38 @@
+XTerm*faceName: Terminus
+XTerm*faceSize: 15
+XTerm*bellIsUrgent: true
+XTerm*utf8: true
+XTerm*loginShell: true
+XTerm*foreground: gray90
+XTerm*background: black
+XTerm*cursorColor: rgb:00/80/00
+XTerm*borderColor: white
+XTerm*scrollColor: black
+XTerm*visualBell: false
+XTerm*saveLines: 1000
+XTerm*allowSendEvents: True
+XTerm*sessionMgt: false
+XTerm*color0: black
+XTerm*color1: red3
+XTerm*color2: green3
+XTerm*color3: yellow3
+XTerm*color4: DodgerBlue1
+XTerm*color5: magenta3
+XTerm*color6: cyan3
+XTerm*color7: gray90
+XTerm*color8: gray50
+XTerm*color9: red
+XTerm*color10: green
+XTerm*color11: yellow
+XTerm*color12: blue
+XTerm*color13: magenta
+XTerm*color14: cyan
+XTerm*color15: white
+XTerm*colorUL: yellow
+XTerm*colorBD: white
+XTerm*scrollBar: false
+XTerm.termName: xterm-256color
+
 Xcursor.theme: Bluecurve
 
 
@@ -6,8 +41,8 @@ URxvt.background: black
 URxvt.foreground: #a8a8a8
 URxvt.underlineColor: yellow
 URxvt.cursorColor: green
-URxvt.font: xft:terminus:pixelsize=19:antialias=false
-URxvt.boldFont: xft:terminus:pixelsize=19:antialias=false
+URxvt.font: xft:consolas:pixelsize=19:antialias=true
+URxvt.boldFont: xft:consolas:pixelsize=19:antialias=true
 URxvt.scrollBar: false
 
 URxvt.urgentOnBell: true
