@@ -1,5 +1,5 @@
 awful.util.spawn("/usr/libexec/openbox-xdg-autostart AWESOME")
-awful.util.spawn("/usr/bin/cairo-compmgr")
+awful.util.spawn("/usr/bin/dcompmgr")
 awful.util.spawn("/usr/bin/blueman-applet")
 awful.util.spawn("/usr/bin/pam-panel-icon")
 awful.util.spawn("/usr/bin/system-config-printer-applet")
