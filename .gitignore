@@ -5,3 +5,7 @@
 .config/tint2/snap.jpg
 .fehbg
 .snmp/mibs
+.snownews/cache
+.snownews/error.log
+.snownews/urls
+.snownews/urls.bak
