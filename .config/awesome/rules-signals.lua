@@ -25,6 +25,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][7] } },
     { rule = { class = "Empathy-chat" },
       properties = { tag = tags[1][7] } },
+    { rule = { class = "Pidgin" },
+      properties = { tag = tags[1][7] } },
     { rule = { class = "Transmission-gtk" },
       properties = { tag = tags[1][8] } },
     { rule = { instance = "urxvt256c" },
