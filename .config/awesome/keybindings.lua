@@ -6,9 +6,9 @@ root.buttons(awful.util.table.join(
 
 
 globalkeys = awful.util.table.join(
-    awful.key({                   }, "XF86AudioRaiseVolume", function () awful.util.spawn("pavolume up") end),
-    awful.key({                   }, "XF86AudioLowerVolume", function () awful.util.spawn("pavolume down") end),
-    awful.key({                   }, "XF86AudioMute", function () awful.util.spawn("pavolume mute") end),
+    awful.key({                   }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer -q set Master 1+ unmute") end),
+    awful.key({                   }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer -q set Master 1- unmute") end),
+    awful.key({                   }, "XF86AudioMute", function () awful.util.spawn("amixer -q set Master toggle") end),
     awful.key({                   }, "XF86CaptureMute", function () awful.util.spawn("amixer -q set Capture toggle") end),
     awful.key({                   }, "XF86AudioStop", function () awful.util.spawn("mpc stop") end),
     awful.key({                   }, "XF86AudioPlay", function () awful.util.spawn("mpc toggle") end),
