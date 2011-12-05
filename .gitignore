@@ -9,3 +9,5 @@
 .snownews/error.log
 .snownews/urls
 .snownews/urls.bak
+xmonad*
+!xmonad.hs
