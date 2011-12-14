@@ -6,7 +6,7 @@ require("naughty")
 require("vicious")
 require("revelation")
 
-beautiful.init("/usr/share/awesome/themes/sky/theme.lua")
+beautiful.init("/home/qmp/.config/awesome/themes/dust/theme.lua")
 
 terminal = "urxvt256c"
 navigator = "firefox"
