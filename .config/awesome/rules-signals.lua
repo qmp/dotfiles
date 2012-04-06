@@ -37,6 +37,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][7] } },
     { rule = { class = "Transmission-gtk" },
       properties = { tag = tags[1][8] } },
+    { rule = { class = "RetroShare" },
+      properties = { tag = tags[1][8] } },
     { rule = { instance = "urxvt256c" },
       properties = { opacity = 0.9 } },
     { rule = { instance = "xterm" },
