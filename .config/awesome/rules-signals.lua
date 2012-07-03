@@ -35,6 +35,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][7] } },
     { rule = { class = "psi" },
       properties = { tag = tags[1][7] } },
+    { rule = { class = "Gajim" },
+      properties = { tag = tags[1][7] } },
     { rule = { class = "Hotot" },
       properties = { tag = tags[1][7] } },
     { rule = { class = "Transmission-gtk" },
