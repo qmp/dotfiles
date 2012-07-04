@@ -11,7 +11,7 @@ beautiful.init("/home/qmp/.config/awesome/themes/dust/theme.lua")
 terminal = "urxvt256c"
 navigator = "firefox"
 mailgui = "thunderbird"
-chat = "empathy"
+chat = "gajim"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
