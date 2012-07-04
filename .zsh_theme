@@ -7,6 +7,9 @@ zstyle ':vcs_info:*' stagedstr '%F{green}●'
 zstyle ':vcs_info:*' unstagedstr '%F{yellow}●'
 zstyle ':vcs_info:*' check-for-changes true
 source ~/.zsh_color
+if [[ -z $user_color_command ]] then
+	user_color_command=$user_color
+fi
 precmd () {
 	if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]] {
 		zstyle ':vcs_info:*' formats ' %F{green}(%b%c%u%F{green})'
@@ -15,4 +18,14 @@ precmd () {
 	}
 	vcs_info
 }
-PROMPT='%F{$user_color}░%c${vcs_info_msg_0_}%F{$user_color}» %{$reset_color%}'
+
+function zle-line-init zle-keymap-select {
+	color="${${KEYMAP/vicmd/${user_color_command}}/(main|viins)/${user_color}}"
+	vitrailing="${${KEYMAP/vicmd/«}/(main|viins)/»}"
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+color=${user_color}
+PROMPT='%F{$color}░%c${vcs_info_msg_0_}%F{$color}$vitrailing %{$reset_color%}'
