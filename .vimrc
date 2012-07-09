@@ -9,11 +9,15 @@ call vundle#rc()
 "github repos
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/vimprj'
 
 
 
 "vim-scripts repos
 Bundle 'CCTree'
+Bundle 'taglist.vim'
+Bundle 'indexer.tar.gz'
+Bundle 'DfrankUtil'
 
 
 "other repos
@@ -30,3 +34,9 @@ filetype plugin indent on
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
+
+
+" Normal initialization
+
+autocmd filetype c TlistToggle
+autocmd filetype python set tabstop=4|set shiftwidth=4|set expandtab
