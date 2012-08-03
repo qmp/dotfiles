@@ -8,3 +8,4 @@ compinit
 # End of lines added by compinstall
 
 source /home/qmp/.zsh_theme
+alias cmatrix='cmatrix -C magenta'
