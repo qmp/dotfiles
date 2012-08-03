@@ -38,5 +38,4 @@ filetype plugin indent on
 
 " Normal initialization
 
-autocmd filetype c TlistToggle
 autocmd filetype python set tabstop=4|set shiftwidth=4|set expandtab
