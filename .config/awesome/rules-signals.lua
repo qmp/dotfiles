@@ -33,6 +33,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][7] } },
     { rule = { class = "Pidgin" },
       properties = { tag = tags[1][7] } },
+    { rule = { class = "Skype" },
+      properties = { tag = tags[1][7] } },
     { rule = { class = "psi" },
       properties = { tag = tags[1][7] } },
     { rule = { class = "Gajim" },
