@@ -6,7 +6,8 @@ require("naughty")
 require("vicious")
 require("revelation")
 
-beautiful.init("/home/qmp/.config/awesome/themes/dust/theme.lua")
+home = os.getenv("HOME")
+beautiful.init(home .. "/.config/awesome/themes/dust/theme.lua")
 
 terminal = "urxvt256c"
 navigator = "firefox"
@@ -29,8 +30,12 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ "♒", "⌥", "♐", "♓", "♏", "☊", "⌘", "✿", "♉", "ஸகி" }, s, layouts[1])
+    tags[s] = awful.tag({ "♒", "⌥", "♐", "♓", "♏", "☊", "⌘", "✿", "♉" }, s, layouts[1])
 end
+awful.tag.new({"ஸகி" }, nil, awful.layout.suit.fair)
+sakiscreen = 1 -- nil is screen 1 by default
+sakitag = #tags
+awful.tag.viewonly(tags[1][1])
 
 require("top-bar")
 require("keybindings")

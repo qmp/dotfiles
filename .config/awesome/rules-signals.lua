@@ -7,6 +7,24 @@ awful.rules.rules = {
                      focus = true,
                      keys = clientkeys,
                      buttons = clientbuttons } },
+
+-- http://permalink.gmane.org/gmane.comp.window-managers.awesome/8368
+    { rule = { class = "feh" },
+      callback = function (c)
+        local clients = client.get()
+        local property = {class = "feh"}
+	local instance_counter = 0
+	for _, c in ipairs(clients) do
+		if (awful.rules.match(c, property)) then
+			instance_counter = instance_counter + 1
+			if (instance_counter >= 3) then return end
+		end
+	end 
+	-- saki :3
+        c:tags({tags[sakiscreen][sakitag]})
+      end
+      },
+
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
     { rule = { class = "pinentry" },

@@ -4,3 +4,6 @@
 [submodule ".config/awesome/themes"]
 	path = .config/awesome/themes
 	url = https://github.com/mikar/awesome-themes.git
+[submodule ".config/awesome/shifty"]
+	path = .config/awesome/shifty
+	url = http://bioe007@github.com/bioe007/awesome-shifty.git
