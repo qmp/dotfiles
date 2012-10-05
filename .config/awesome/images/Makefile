@@ -1,0 +1,2 @@
+wallpaper.jpg: Makefile
+	montage ~/photos/IMG-201208*{53,77}*  -geometry 700x900\> -shadow -background grey10 wallpaper.jpg
