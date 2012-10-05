@@ -30,7 +30,7 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ "♒", "⌥", "♐", "♓", "♏", "☊", "⌘", "✿", "♉", "ஸகி" }, s, layouts[1])
+    tags[s] = awful.tag({ "♒", "⌥", "♐", "♓", "♏", "☊", "⌘", "✿", "♉", "சகிதா"  }, s, layouts[1])
 end
 
 require("top-bar")
