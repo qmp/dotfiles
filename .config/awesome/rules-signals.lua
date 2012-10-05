@@ -77,3 +77,19 @@ client.add_signal("manage", function (c, startup)
         end
     end
 end)
+
+-- Signal for saki tag
+-- TODO : get tag number programatically
+sakitag=10
+for s = 1, screen.count() do
+	tags[s][sakitag]:add_signal("property::selected", function(tag)
+		if (tag.selected) then
+			awful.util.spawn("/usr/bin/awsetbg " .. home .. "/.config/awesome/images/wallpaper.jpg")
+		else
+			-- set beautiful wallpaper
+			-- TODO : use beautiful to get theme wallpaper
+			awful.util.spawn("/usr/bin/awsetbg " .. home .. "/.config/awesome/themes/" .. "/dust/".."/background.jpg")
+		end
+	end
+	)
+end
