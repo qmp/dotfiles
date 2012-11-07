@@ -84,7 +84,7 @@ sakitag=10
 for s = 1, screen.count() do
 	tags[s][sakitag]:add_signal("property::selected", function(tag)
 		if (tag.selected) then
-			awful.util.spawn("/usr/bin/awsetbg " .. home .. "/.config/awesome/images/wallpaper.jpg")
+			awful.util.spawn("/usr/bin/awsetbg -c " .. home .. "/.config/awesome/images/wallpaper.jpg")
 		else
 			-- set beautiful wallpaper
 			-- TODO : use beautiful to get theme wallpaper
