@@ -1,1 +1,1 @@
-$pdf_previewer = 'start zathura %O %S'
+$pdf_previewer = 'start evince %O %S'
