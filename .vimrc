@@ -12,6 +12,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/vimprj'
 Bundle 'vim-scripts/LanguageTool'
 Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'Rykka/riv.vim'
 
 
 
