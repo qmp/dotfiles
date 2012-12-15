@@ -16,6 +16,8 @@ awful.rules.rules = {
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][2],
                      floating = false } },
+    { rule = { class = "luakit" },
+      properties = { tag = tags[1][2] } },
     { rule = { class = "Liferea" },
       properties = { tag = tags[1][2] } },
     { rule = { class = "Thunderbird" },
