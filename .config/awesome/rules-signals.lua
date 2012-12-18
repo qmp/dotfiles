@@ -49,7 +49,8 @@ awful.rules.rules = {
     { rule = { class = "RetroShare" },
       properties = { tag = tags[1][8] } },
     { rule = { instance = "urxvt256c" },
-      properties = { opacity = 0.9 } },
+      properties = { opacity = 0.9,
+                     size_hints_honor = false} },
     { rule = { instance = "xterm" },
       properties = { opacity = 0.9 } },
 }
