@@ -44,6 +44,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][7] } },
     { rule = { class = "Hotot" },
       properties = { tag = tags[1][7] } },
+    { rule = { class = "Turpial" },
+      properties = { tag = tags[1][7] } },
     { rule = { class = "Transmission-gtk" },
       properties = { tag = tags[1][8] } },
     { rule = { class = "RetroShare" },
