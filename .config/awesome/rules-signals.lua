@@ -30,6 +30,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][6] } },
     { rule = { class = "Clementine" },
       properties = { tag = tags[1][6] } },
+    { rule = { class = "Musique" },
+      properties = { tag = tags[1][6] } },
     { rule = { class = "Empathy" },
       properties = { tag = tags[1][7] } },
     { rule = { class = "Empathy-chat" },
