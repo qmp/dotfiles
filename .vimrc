@@ -41,4 +41,4 @@ filetype plugin indent on
 
 " Normal initialization
 
-autocmd filetype python set tabstop=4|set shiftwidth=4|set expandtab
+" autocmd filetype python set tabstop=4|set shiftwidth=4|set expandtab
