@@ -1,8 +1,0 @@
-awful.util.spawn_with_shell("/usr/libexec/openbox-xdg-autostart AWESOME")
-awful.util.spawn_with_shell("/usr/bin/blueman-applet")
-awful.util.spawn_with_shell("/usr/bin/pam-panel-icon")
-awful.util.spawn_with_shell("/usr/bin/system-config-printer-applet")
-awful.util.spawn_with_shell("/usr/bin/firewall-applet")
-awful.util.spawn_with_shell("/usr/bin/gpk-update-icon")
-awful.util.spawn_with_shell("/usr/libexec/gdu-notification-daemon")
-awful.util.spawn_with_shell("wmname LG3D")

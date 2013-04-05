@@ -1,1 +1,0 @@
-../bashets/userscripts/runner.sh
