@@ -13,3 +13,6 @@
 [submodule ".config/awesome/themes/awesome-copycats"]
 	path = .config/awesome/themes/awesome-copycats
 	url = https://github.com/copycat-killer/awesome-copycats.git
+[submodule ".config/awesome/batteryInfo"]
+	path = .config/awesome/batteryInfo
+	url = git://github.com/koentje/awesome-batteryInfo.git
