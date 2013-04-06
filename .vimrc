@@ -22,6 +22,8 @@ Bundle 'CCTree'
 Bundle 'taglist.vim'
 Bundle 'indexer.tar.gz'
 Bundle 'DfrankUtil'
+Bundle 'desert256.vim'
+Bundle 'vividchalk.vim'
 
 
 "other repos
@@ -45,4 +47,4 @@ filetype plugin indent on
 " autocmd filetype python set tabstop=4|set shiftwidth=4|set expandtab
 
 set background=dark
-colorscheme solarized
+colorscheme vividchalk
