@@ -354,6 +354,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][2] } },
     { rule = { class = "Thunderbird" },
       properties = { tag = tags[1][3] } },
+    { rule = { class = "Clementine" },
+      properties = { tag = tags[1][6] } },
     { rule = { class = "Transmission-gtk" },
       properties = { tag = tags[1][8] } },
     { rule = { instance = "urxvt256c" },
