@@ -7,5 +7,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+export SEND_256_COLORS_TO_REMOTE=1
 source /home/qmp/.zsh_theme
 alias cmatrix='cmatrix -C magenta'

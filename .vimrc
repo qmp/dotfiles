@@ -13,6 +13,7 @@ Bundle 'vim-scripts/vimprj'
 Bundle 'vim-scripts/LanguageTool'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'Rykka/riv.vim'
+Bundle 'altercation/vim-colors-solarized'
 
 
 
@@ -42,3 +43,6 @@ filetype plugin indent on
 " Normal initialization
 
 " autocmd filetype python set tabstop=4|set shiftwidth=4|set expandtab
+
+set background=dark
+colorscheme solarized
