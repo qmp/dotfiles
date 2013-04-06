@@ -7,3 +7,6 @@
 [submodule ".config/awesome/shifty"]
 	path = .config/awesome/shifty
 	url = http://bioe007@github.com/bioe007/awesome-shifty.git
+[submodule ".config/awesome/themes/awesome-solarized"]
+	path = .config/awesome/themes/awesome-solarized
+	url = git://github.com/cycojesus/awesome-solarized.git
