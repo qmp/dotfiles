@@ -47,7 +47,7 @@ editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 --
 -- Themes define colours, icons, and wallpapers
-beautiful.init(home .. "/.config/awesome/themes/awesome-solarized/dark/theme.lua")
+beautiful.init(home .. "/.config/awesome/themes/default/theme.lua")
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.

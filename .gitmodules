@@ -10,3 +10,6 @@
 [submodule ".config/awesome/themes/awesome-solarized"]
 	path = .config/awesome/themes/awesome-solarized
 	url = git://github.com/cycojesus/awesome-solarized.git
+[submodule ".config/awesome/themes/awesome-copycats"]
+	path = .config/awesome/themes/awesome-copycats
+	url = https://github.com/copycat-killer/awesome-copycats.git
