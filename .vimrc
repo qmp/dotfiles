@@ -14,6 +14,9 @@ Bundle 'vim-scripts/LanguageTool'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'Rykka/riv.vim'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'Rip-Rip/clang_complete'
+Bundle 'vim-scripts/Buffergator'
+Bundle 'Lokaltog/vim-powerline'
 
 
 
@@ -48,3 +51,16 @@ filetype plugin indent on
 
 set background=dark
 colorscheme vividchalk
+
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+let g:clang_user_options='|| exit 0'
+let g:clang_close_preview=1
+set laststatus=2
+
+" mappings
+nmap <silent> <F2> :NERDTreeToggle<CR>
+nmap <silent> <F3> :BuffergatorToggle<CR>
+nmap <silent> <F6> :make<CR>
