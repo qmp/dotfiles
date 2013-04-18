@@ -17,6 +17,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'vim-scripts/Buffergator'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'majutsushi/tagbar'
 
 
 
@@ -63,4 +64,9 @@ set laststatus=2
 " mappings
 nmap <silent> <F2> :NERDTreeToggle<CR>
 nmap <silent> <F3> :BuffergatorToggle<CR>
+nmap <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 nmap <silent> <F6> :make<CR>
+nmap <F8> :TagbarToggle<CR>
+nnoremap <F12> :set invpaste paste?<CR>
+set pastetoggle=<F12>
+set showmode
