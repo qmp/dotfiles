@@ -454,12 +454,23 @@ function run_once(prg,arg_string,pname,screen)
     end
 end
 
-run_once("/usr/libexec/openbox-xdg-autostart AWESOME")
+run_once("/usr/bin/gnome-keyring-daemon", "--start --components=pkcs11");
+run_once("/usr/bin/gnome-keyring-daemon", "--start --components=secrets");
+run_once("/usr/bin/gnome-keyring-daemon", "--start --components=ssh");
+run_once("/usr/bin/gnome-keyring-daemon", "--start --components=gpg");
+run_once("/usr/bin/nm-applet")
+run_once("/usr/libexec/polkit-gnome-authentication-agent-1");
+run_once("/usr/bin/abrt-applet");
+run_once("/usr/bin/spice-vdagent");
+run_once("usr/sbin/restorecond", "-u");
+run_once("/usr/bin/start-pulseaudio-x11");
+run_once("/usr/bin/system-config-printer-applet");
+run_once("/usr/bin/seapplet");
+run_once("/usr/bin/imsettings-switch", "-n -q -x");
+run_once("/usr/libexec/deja-dup/deja-dup-monitor");
+run_once("/usr/bin/dnssec-trigger");
 run_once("/usr/bin/blueman-applet")
 run_once("/usr/bin/pam-panel-icon")
-run_once("/usr/bin/system-config-printer-applet")
-run_once("/usr/bin/firewall-applet")
+run_once("/usr/bin/python", "/usr/bin/firewall-applet")
 run_once("/usr/bin/gpk-update-icon")
-run_once("/usr/libexec/gdu-notification-daemon")
-run_once("wmname LG3D")
-
+run_once("/usr/bin/wmname", "LG3D")
