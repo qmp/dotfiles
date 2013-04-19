@@ -472,5 +472,5 @@ run_once("/usr/bin/dnssec-trigger");
 run_once("/usr/bin/blueman-applet")
 run_once("/usr/bin/pam-panel-icon")
 run_once("/usr/bin/python", "/usr/bin/firewall-applet")
-run_once("/usr/bin/gpk-update-icon")
+run_once("/usr/bin/pk-update-icon")
 run_once("/usr/bin/wmname", "LG3D")
